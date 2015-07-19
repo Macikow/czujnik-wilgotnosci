@@ -4,6 +4,8 @@
 
 src\debug\debug.c
 
+src\main.c
+
 src\measure\measure.c
 
 src\nRF\nRF.c
@@ -11,8 +13,4 @@ src\nRF\nRF.c
 src\picopower\picopower.c
 
 src\spi\spi.c
-
-src\ASF\common\boards\user_board\init.c
-
-src\main.c
 

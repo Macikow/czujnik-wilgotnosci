@@ -9,9 +9,9 @@
 #ifndef SPI_H_
 #define SPI_H_
 
-void SPI_MasterInit(void);
-void SPI_MasterTransmit(unsigned char data);
-unsigned char SPI_MasterRead(void);
+void spiInit(void);
+void spiTransmit(unsigned char data);
+unsigned char spiRead(void);
 void SPI_CSNHigh(void);
 void SPI_CSNLow(void);
 

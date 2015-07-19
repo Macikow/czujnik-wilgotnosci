@@ -7,7 +7,7 @@
 #include "debug.h"
 #define F_CPU 8000000UL
 #include <avr/io.h>
-#include <interrupt.h>
+#include <avr/interrupt.h>
 #include <stdio.h>
 
 
@@ -16,9 +16,12 @@
 #define COMPARE_CHAR_COUNT 5
 
 void USART_init(void){
+	
 	UBRR0L = (unsigned char) 51;
 	UBRR0H = (unsigned char) 0x00;
 	UCSR0B = ((1<<TXEN0) | (1<<RXEN0) | (1<<RXCIE0));
+	printf("%s%sRozpoczêcie porgramu ver1\n",ERASE_SCREEN,CURSOR_HOME);
+	printf("inicjalizacja USART - OK \n");
 	sei();
 }
 

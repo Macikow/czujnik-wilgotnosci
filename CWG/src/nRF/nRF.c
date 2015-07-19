@@ -17,10 +17,10 @@ unsigned char nRF_ReadRegister(unsigned char nAddress);
 
 void nRF_WriteRegister(unsigned char nAddress, unsigned char nData){
 	
-	SPI_MasterTransmit(nAddress | W_REGISTER);
+//	SPI_MasterTransmit(nAddress | W_REGISTER);
 }
 unsigned char nRF_ReadRegister(unsigned char nAddress){
-	SPI_MasterTransmit(nAddress | R_REGISTER);
-	SPI_MasterTransmit(EMPTY_MEESAGE);
-	return SPI_MasterRead();
+	//SPI_MasterTransmit(nAddress | R_REGISTER);
+	//SPI_MasterTransmit(EMPTY_MEESAGE);
+	//return SPI_MasterRead();
 }

@@ -8,6 +8,7 @@
 #define F_CPU 8000000UL
 #include <avr/io.h>
 #include <util/delay.h>
+#include <stdio.h>
 
 void ampInit(void);
 
@@ -29,6 +30,7 @@ void ampInit(void);
 
 
 void ampInit(void){
+	printf("inicjalizacja peryferii pomiarowych - OK\n");
 	DDRB |= 0xC0;
 	DDRD |= 0xf0;
 	PORTD =0x00;
